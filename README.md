@@ -6,7 +6,7 @@ The netCDF format is described here:
 
 http://www.unidata.ucar.edu/software/netcdf/docs/
 
-## netCDF2struct.pro
+## ncdf2struct.pro
 
 This program reads the entire content of any netCDF file directly into an IDL structure
 
@@ -18,7 +18,7 @@ calling sequence:
 
 "data" [output]. structure. the returned structure that contains the netCDF's content.
 
-## struct2netCFF.pro
+## struct2ncdf.pro
 
 This program writes an IDL structure into a (limited) netCDF file. The output can handle most file formats, but cannot handle string arrays. The string tags are translated into variable names in the netCDF.
 
