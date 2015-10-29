@@ -14,10 +14,18 @@ calling sequence:
 
     data = ncdf2struct(ncdf_file)
 
-"ncdf_file" [input]. string. full filepath of ncdf file.
+"ncdf_file" [input]. string. full filepath of ncdf file to be read.
 
-"data" [output]. structure. the returned string that contains the netCDF's content.
+"data" [output]. structure. the returned structure that contains the netCDF's content.
 
 ## struct2netCFF.pro
 
 This program writes an IDL structure into a (limited) netCDF file. The output can handle most file formats, but cannot handle string arrays. The string tags are translated into variable names in the netCDF.
+
+calling sequence:
+
+    struct2ncdf, ncdf_file, data
+
+"ncdf_file" [input]. string. full filepath of ncdf file to be written.
+
+"data" [input]. structure. the structure that is to be written into the netCDF.
